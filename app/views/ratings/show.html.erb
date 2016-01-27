@@ -7,12 +7,12 @@
 
 <p>
   <strong>Restaurant:</strong>
-  <%= @rating.restaurant %>
+  <%= @rating.restaurant.name %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @rating.user %>
+  <%= @rating.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_rating_path(@rating) %> |

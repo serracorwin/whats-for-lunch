@@ -2,14 +2,14 @@ class RestaurantsController < ApplicationController
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
   def index
-    @restaurant = Restuarant.all
+    @restaurants = Restaurant.all
   end
 
   def show
   end
 
   def new
-    @restaurant = Restuarant.new
+    @restaurant = Restaurant.new
   end
 
   def edit

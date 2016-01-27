@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "puma"
 gem "devise"
 gem "bootstrap-sass"
+gem "simple_form"
 
 group :test do
   gem "rspec-rails"

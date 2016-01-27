@@ -24,7 +24,7 @@ class RatingsController < ApplicationController
   # POST /ratings
   # POST /ratings.json
   def create
-    @rating = Rating.new(rating_params)
+    @rating = current_user.ratings.new(rating_params)
 
     respond_to do |format|
       if @rating.save
